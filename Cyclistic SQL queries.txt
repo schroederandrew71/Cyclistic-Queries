@@ -1,0 +1,314 @@
+SELECT AVG(trip_duration) AS Average_Member_duration,
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = "member"
+
+/* 25.86 minutes */
+
+SELECT AVG(trip_duration) AS Average_Casual_duration,
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = "casual"
+
+/* 12.63 minutes */
+
+SELECT COUNT(*) AS member_electric_bikes_used
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member'AND rideable_type = 'electric_bike'
+
+/* 1,858,199 */
+
+SELECT COUNT(*) AS member_classic_bikes_used
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member'AND rideable_type = 'classic_bike'
+
+/* 1,979,200 */
+
+SELECT COUNT(*) AS member_docked_bikes_used
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member'AND rideable_type = 'docked_bike'
+
+/* 0 */
+
+SELECT COUNT(*) AS casual_docked_bikes_used
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual'AND rideable_type = 'docked_bike'
+
+/* 213,195 */
+
+SELECT COUNT(*) AS casual_electric_bikes_used
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual'AND rideable_type = 'electric_bike'
+
+/*1,475,134 */
+
+
+SELECT COUNT(*) AS casual_classic_bikes_used
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual'AND rideable_type = 'classic_bike'
+
+/* 1,082,135 */
+
+SELECT COUNT(*) AS casual_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND day_of_week = 1
+
+/* 467,702 */
+
+SELECT COUNT(*) AS casual_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND day_of_week = 2
+
+/* 322,544 */
+
+
+SELECT COUNT(*) AS casual_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND day_of_week = 3
+
+/* 308,604 */
+
+SELECT COUNT(*) AS casual_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND day_of_week = 4
+
+
+/* 334,906 */
+
+SELECT COUNT(*) AS casual_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND day_of_week = 5
+
+/* 380,621 */
+
+SELECT COUNT(*) AS casual_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND day_of_week = 6
+
+/* 404,927 */
+
+SELECT COUNT(*) AS casual_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND day_of_week = 7
+
+/* 551,160 */
+
+SELECT COUNT(*) AS member_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND day_of_week = 1
+
+/* 446,192 */
+
+SELECT COUNT(*) AS member_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND day_of_week = 2
+
+/* 529,197 */
+
+SELECT COUNT(*) AS member_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND day_of_week = 3
+
+/* 580,071 */
+
+SELECT COUNT(*) AS member_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND day_of_week = 4
+
+/* 615,217 */
+
+SELECT COUNT(*) AS member_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND day_of_week = 5
+
+/* 623,371 */
+
+SELECT COUNT(*) AS member_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND day_of_week = 6
+
+/* 541,646 */
+
+SELECT COUNT(*) AS member_day_of_week
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND day_of_week = 7
+
+/* 501,705 */
+
+SELECT COUNT(*) AS member_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND started_date BETWEEN '2022-01-01' AND '2022-01-31'
+
+/* 85,250 */
+
+
+SELECT COUNT(*) AS member_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND started_date BETWEEN '2022-02-01' AND '2022-02-28'
+
+/* 94,193 */
+
+SELECT COUNT(*) AS member_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND started_date BETWEEN '2022-03-01' AND '2022-03-31'
+
+/* 194,160 */
+
+SELECT COUNT(*) AS member_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND started_date BETWEEN '2022-04-01' AND '2022-04-30'
+
+/* 244,832 */
+
+
+SELECT COUNT(*) AS member_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND started_date BETWEEN '2022-04-01' AND '2022-04-30'
+
+/* 354,443 */
+
+SELECT COUNT(*) AS member_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND started_date BETWEEN '2022-06-01' AND '2022-06-30'
+
+/* 850,977 */
+
+SELECT COUNT(*) AS member_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND started_date BETWEEN '2022-07-01' AND '2022-07-31'
+
+/* 417,433 */
+
+SELECT COUNT(*) AS member_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND started_date BETWEEN '2022-08-01' AND '2022-08-31'
+
+/* 427,008 */
+
+SELECT COUNT(*) AS member_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND started_date BETWEEN '2022-09-01' AND '2022-09-30'
+
+/* 404,642 */
+
+SELECT COUNT(*) AS member_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND started_date BETWEEN '2022-10-01' AND '2022-10-31'
+
+/* 349,696 */
+
+SELECT COUNT(*) AS member_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND started_date BETWEEN '2022-11-01' AND '2022-11-30'
+
+/* 236,963 */
+
+SELECT COUNT(*) AS member_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'member' AND started_date BETWEEN '2022-12-01' AND '2022-12-31'
+
+/* 0 */
+
+SELECT COUNT(*) AS casual_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND started_date BETWEEN '2022-11-01' AND '2022-11-30'
+
+/* 100,772*/
+
+SELECT COUNT(*) AS casual_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND started_date BETWEEN '2022-10-01' AND '2022-10-31'
+
+/* 208,989*/
+
+SELECT COUNT(*) AS casual_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND started_date BETWEEN '2022-09-01' AND '2022-09-30'
+
+/* 296,697 */
+
+SELECT COUNT(*) AS casual_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND started_date BETWEEN '2022-08-01' AND '2022-08-31'
+
+/* 358,924*/
+
+SELECT COUNT(*) AS casual_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND started_date BETWEEN '2022-07-01' AND '2022-07-31'
+
+/* 406,055*/
+
+SELECT COUNT(*) AS casual_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND started_date BETWEEN '2022-06-01' AND '2022-06-30'
+
+/* 792,639*/
+
+SELECT COUNT(*) AS casual_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND started_date BETWEEN '2022-05-01' AND '2022-05-31'
+
+/* 280,415 */
+
+SELECT COUNT(*) AS casual_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND started_date BETWEEN '2022-04-01' AND '2022-04-30'
+
+/* 126,417*/
+SELECT COUNT(*) AS casual_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND started_date BETWEEN '2022-03-01' AND '2022-03-31'
+
+/* 89,882*/
+
+SELECT COUNT(*) AS casual_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND started_date BETWEEN '2022-02-01' AND '2022-02-28'
+
+/*21,416*/
+
+SELECT COUNT(*) AS casual_rides_by_month
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' AND started_date BETWEEN '2022-01-01' AND '2022-01-31'
+
+/*18,520*/
+
+SELECT  start_station_name,
+        COUNT(*) AS casual_start_location
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' 
+GROUP BY start_station_name
+ORDER BY COUNT(start_station_name) DESC
+
+/* streeter Dr & Grand Ave, DuSable Lake Shore Dr & Monroe St, Millennium Park, Michigan Ave & Oak St */
+
+SELECT  end_station_name,
+        COUNT(*) AS casual_end_location
+FROM my-data-project12345-370819.Cyclistic.cyclistic
+WHERE member_casual = 'casual' 
+GROUP BY end_station_name
+ORDER BY COUNT(end_station_name) DESC
+
+/* Streeter DR & Grand Ave, DuSable Lake Shore Dr & North Blvd, DuSable Lake Shore Dr & Monroe St, Millenium Park */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
