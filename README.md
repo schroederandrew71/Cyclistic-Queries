@@ -15,6 +15,7 @@ The following data was provided by Motivate International Inc. (https://www.divv
 202203-divvy-trip-data,
 202203-divvy-trip-data
 
+Total number of rows = 6,924,133
 Raw data was cleaned in Excel.
 - Confirmed no duplicates in ride_id column.
 - Seperated and formatted date and time into seperate columns.
